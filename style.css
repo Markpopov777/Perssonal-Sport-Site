@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:
+    border-box;
+
+}
+
+
+.navbar {
+            color : white;
+            background: black;
+}
+
+.nav-link{
+            color : white;
+}
+
+
+.navbar-brand{
+
+            color: white;
+            font-family: 'Dancing Script', cursive;
+
+}
+
+.navbar-brand:hover{
+
+            color: white;
+            font-family: 'Dancing Script', cursive;
+
+}
+
+
+span{
+
+            color: rgb(91,192,222);
+            cursor: pointer;
+
+}
+
+.nav-item{
+
+         padding-right: 50px;
+
+}
+
+.nav-link{
+
+        color: white;
+        text-transform: uppercase;
+        font-family: sans-serif;
+}
+.nav-link:hover{
+
+        color: blue;
+
+}
+
+.d-flex{
+
+    font-family: 'Dancing Script', cursive;
+    color: RGB(2,200,216);
+}
