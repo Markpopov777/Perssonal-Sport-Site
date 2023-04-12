@@ -4,15 +4,23 @@
     box-sizing:
     border-box;
 
+
+
 }
 
 
 .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             color : white;
             background: black;
+            z-index: 2;
 }
 
 .nav-link{
+
             color : white;
 }
 
@@ -29,6 +37,7 @@
             color: white;
             font-family: 'Dancing Script', cursive;
 
+
 }
 
 
@@ -41,7 +50,7 @@ span{
 
 .nav-item{
 
-         padding-right: 50px;
+         padding-right: 20px;
 
 }
 
@@ -53,7 +62,9 @@ span{
 }
 .nav-link:hover{
 
-        color: blue;
+        background-color: #008CBA;
+        border-radius: 20px;
+
 
 }
 
@@ -61,4 +72,147 @@ span{
 
     font-family: 'Dancing Script', cursive;
     color: RGB(2,200,216);
+
+}
+/*=======================main title(WRESTLING AND MMA TRAINING)=========================================*/
+
+.btn1{
+    padding: 3px 5px;
+    box-shadow : 0 3px 4px rgba(0,0,0,0.4)
+    color: white;
+    border: 2px solid #008CBA;
+    padding: 5px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size:16px;
+    margin: 10px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.btn1:hover{
+    background-color: #008CBA;
+    border-radius: 5px;
+    transition: all 0.4s;
+
+}
+
+/*=======================main pic=========================================*/
+
+.main{
+    background: url("./img/mark-wrestling.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100vw;
+    height: 80vh;
+
+
+
+}
+/*=======================main words(בואו להתאמן...)=========================================*/
+.main h1{
+       font-size: 5rem;
+       font-weight: 500;
+       text-shadow: 0.5px 0.5px 3px rgba(199,199,185,0.5)
+
+}
+/*=======================main title(WRESTLING AND MMA TRAINING)=========================================*/
+.col-lg-10{
+
+        font-size: 1rem;
+       font-weight: 800;
+
+}
+
+.col-lg-10 p{
+
+      text-decoration: underline;
+}
+
+/*=======================details=========================================*/
+
+/*=======father=====*/
+.details{
+    display: flex;
+    width : 1200px !important;
+    height: 240px;
+    margin-top: 33%;
+    margin-left: 20%;
+    margin-right: 50%;
+
+
+
+}
+/*=======3 cards=====*/
+.details .mark {
+  background-color: #f44336;
+  height: 70px;
+  position: absolute;
+  position: relative; /* Make sure the parent container has a position property set */
+  margin-left: 70px;
+  width: 350px;
+  height: 260px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  overflow: hidden; /* Hide any content that goes beyond the card's boundaries */
+}
+
+.card:hover{
+
+  box-shadow: 1px 0px 20px 5px rgba(1,140,186,1);
+  border-color : 2px solid #fff;
+
+}
+
+
+
+
+.card-body {
+  text-align : center;
+  padding: 0px 20px;
+  margin-top: -20px;
+
+}
+
+
+
+.details h5 {
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  color: #0c0c0c;
+}
+
+.details p {
+  margin-bottom: 0;
+  color: #333;
+}
+/*=======colors links card=====*/
+.details a {
+  display: block;
+  color: #212529;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #0402ff;
+  border-radius: 25px;
+  padding: 8px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.details a:hover {
+  background-color: #0402ff;
+  color: #fff;
+}
+
+.col-lg-6 h2{
+   margin-left:  100%;
+
 }
