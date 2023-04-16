@@ -1,10 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing:
-    border-box;
-
-
 
 }
 
@@ -214,5 +210,51 @@ span{
 
 .col-lg-6 h2{
    margin-left:  100%;
+
+}
+
+<!-- =======================סמינרים כתב========================================= -->
+
+.more h2 {
+        font-weight: 800;
+
+}
+
+.more p {
+     font-size:lightest;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+<!-- =======================discover========================================= -->
+
+
+.discover h1{
+
+    font-weight: 800;
+    font-size: 2.8rem;
+
+}
+
+
+<!-- =======================our service========================================= -->
+
+
+.services h5{
+
+    font-weight: 700;
+
+}
+
+
+.fa-solid {
+   font-size: 2rem;
+
+}
+
+.back:hover .fa-solid{
+    color: #0402ff;
 
 }
