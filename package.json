@@ -1,7 +1,12 @@
 {
   "name": "gym-site",
   "version": "1.0.0",
-  "description": "My Project",
-  "author": "Mark",
-  "license": "MIT"
+  "description": "My project description",
+  "scripts": {
+    "start": "live-server MarkSiteGym.html"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
+
