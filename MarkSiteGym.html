@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 
 <!--Head -->
     <head>
@@ -15,6 +15,7 @@
         <!--Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+
         <!--Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +25,10 @@
 
         <!--font awesome -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" >
+
+        <!--Owl Carouse -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
 
@@ -202,7 +207,7 @@
         </section>
 
 
-<!-- =======================our service========================================= -->
+<!-- =======================האימונים איתי========================================= -->
 
         <section class="services py-5">
             <div class="container py-5 text-center">
@@ -276,10 +281,113 @@
                 </div>
         </section>
 
+<!-- =======================course========================================= -->
 
+
+        <section class="course py-5 bg-light">
+            <div class="container py-5">
+                <h1 class="text-center">POPULAR COURSES</h1>
+                <p class="text-center"> אנחנו מציעים את הספריית וידאו עם מעל 200 הדרכות שונות מהלוחמים החזקים בארץ ובעולם </p>
+                <div class="row py-5">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="./img/dopa.work.jpg" class="img-fluid" alt="Images">
+                            <div class="card-body" style="margin-top: 20px;">
+                              <h3 class="m-0">אימוני כושר</h3>
+                              <p> מאמן: מרק פופוב </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="./img/fight.jpg" class="img-fluid" alt="Images">
+                            <div class="card-body" style="margin-top: 20px;">
+                                <h3 class="m-0">היאבקות</h3>
+                                <p> מאמן: מרק פופוב </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="./img/me.jpg" class="img-fluid" alt="Images">
+                            <div class="card-body" style="margin-top: 20px;">
+                                <h3 class="m-0">MMA היאבקות</h3>
+                                <p> מאמן: מרק פופוב </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="./img/win.jpg" class="img-fluid" alt="Images">
+                            <div class="card-body" style="margin-top: 20px;">
+                                <h3 class="m-0">הגנות רגליים</h3>
+                                <p> מאמן: מרק פופוב </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 m-auto">
+                      <button class="btn1" >לראות את כל הקורסים</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- =======================our gallery========================================= -->
+
+        <section class="carousel-slide py-5">
+            <div class="container-fluid py-5">
+                <h1 class="text-center"> Gallery</h1>
+                <p class="text-center"> תמונות מהאימונים שלנו </p>
+                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div class="carousel-inner active d-flex justify-content-center">
+                        <div class="slider-wrapper axis-horizontal-active">
+                            <img src="./img/win.jpg" data-toggle="modal" data-target="#exampleModal" class="img-fluid d-block w-100" alt="...">
+                        </div>
+                        <div class="slider-wrapper axis-horizontal">
+                            <img src="./img/win.jpg" data-toggle="modal" data-target="#exampleModal"  class="img-fluid d-block w-100" alt="...">
+                        </div>
+                        <div class="slider-wrapper axis-horizontal">
+                            <img src="./img/win.jpg" data-toggle="modal" data-target="#exampleModal"  class="img-fluid d-block w-100" alt="...">
+                        </div>
+                        <div class="slider-wrapper axis-horizontal">
+                            <img src="./img/win.jpg" data-toggle="modal" data-target="#exampleModal"  class="img-fluid d-block w-100" alt="...">
+                        </div>
+                        <div class="slider-wrapper axis-horizontal">
+                            <img src="./img/win.jpg" data-toggle="modal" data-target="#exampleModal"  class="img-fluid d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">&lt;</button>
+                        <button class="carousel-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- =======================footer========================================= -->
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- ======================= script ============================= -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
 
     </body>
 
-</html>
 
