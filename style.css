@@ -1,8 +1,13 @@
 *{
 
-    padding: 0;
+    padding: 0px ;
+
+
+
 
 }
+
+
 
 .navbar {
             position: fixed;
@@ -12,6 +17,7 @@
             color : white;
             background: black;
             z-index: 2;
+
 }
 
 .nav-link{
@@ -44,11 +50,7 @@ span{
 
 }
 
-.nav-item{
 
-         padding-right: 20px;
-
-}
 
 .nav-link{
 
@@ -73,18 +75,19 @@ span{
 /*=======================main title(WRESTLING AND MMA TRAINING)=========================================*/
 
 .btn1{
-    padding:  5px;
+
     box-shadow : 0 3px 4px rgba(0,0,0,0.4)
     color: white;
     border: 2px solid #008CBA;
-    padding: 5px 25px;
+    padding: 5px 50px;
     text-align: center;
     display: inline-block;
     font-size:16px;
-    margin: 10px 2px;
-    transition-duration: 0.4s;
+    margin: 0px -71px;
+    transition-duration: 0.1s;
     cursor: pointer;
     border-radius: 5px;
+    position: absolute;
 
 }
 
@@ -95,29 +98,159 @@ span{
 
 }
 
+
+
+/*=======================details=========================================*/
+:root{
+  --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --bs-border-color-translucent: rgba(255, 255, 255, 0.17);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1600px;
+}
+
+
+.hero-section{
+
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+
+
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+.card:before{
+  content: '';
+
+
+}
+
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  trsnsform: scale(1) translateZ(0);
+  transition:
+    filter 200ms linear,
+    transform 200ms linear;
+
+}
+
+.card:hover .card__background{
+  transform: scale(1.05) translateZ(0);
+
+}
+
+.card-grid:hover > .card:not(:hover) .card__background{
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+
+}
+
+.card__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.card__category{
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.card__heading{
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+}
+
+
+
+
+/*=========================סמינרים כתב=========================================*/
+
+.more h2 {
+        font-weight: 500;
+
+
+}
+
+.more p {
+     font-size:lightest;
+
+}
+
+p {
+  font-size: 1.1rem
+
+}
+
+.section more py-5{
+  padding-top:1rem;
+
+}
+
+
+
+
+
+/*=========================discover=========================================*/
+
+.discover h1 {
+  max-width: 900px;
+  max-height: 85vh;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.85)
+
+}
+
 /*=======================main pic=========================================*/
 
 .main{
     background : url("./img/mark-wrestling.jpg")no-repeat;
     background-size: cover;
     background-position: center;
-    position: absolute;
     top: 0%;
     left: 0%;
     right: 0%;
     width: 100%;
     height: 80%;
     background-attachment: fixed;
-
-}
-
-
-
-/*=======================main words(בואו להתאמן...)=========================================*/
-.main h1{
-       font-size: 5rem;
-       font-weight: 500;
-       text-shadow: 1.5px 1.5px 8px rgb(255 255 255 / 50%)
 
 }
 /*=======================main title(WRESTLING AND MMA TRAINING)=========================================*/
@@ -134,113 +267,11 @@ span{
       text-decoration: none;
       text-shadow: 10px 10px 20px rgb(255 255 255 ,0.5)
 }
-
-/*=======================details=========================================*/
-
-/*=======father=====*/
-.details{
-    display: flex;
-
-    width : 1200px;
-    height: 200px;
-    margin-bottom: 4.5%;
-    margin-top: 25%;
-    margin-left: 20%;
-    margin-right: 50%;
-
-}
-
-/*=======3 cards=====*/
-.flip-card {
-
-  background-color: transparent;
-  width: 300px;
-  height: 350px;
-  margin: 60px;
-  perspective: 1000px;
-
-
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #fff;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.flip-card-front img {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.flip-card-front h3 {
-  margin-top: 20px;
-}
-
-.flip-card-back {
-  background-color: #333;
-  color: #fff;
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  line-height: 1.5;
-}
-
-.flip-card-back h3 {
-  margin-bottom: 20px;
-}
-
-/*=========================סמינרים כתב=========================================*/
-
-.more h2 {
-        font-weight: 800;
-
-}
-
-.more p {
-     font-size:lightest;
-}
-
-p {
-  font-size: 1.1rem
-
-}
-
-/*=========================discover=========================================*/
-
-
-.discover h1{
-
-
-    font-size: 2.8rem;
+/*=======================main words(מזמין אותכם...)=========================================*/
+.main h1{
+       font-size: 5rem;
+       font-weight: 500;
+       text-shadow: 1.5px 1.5px 8px rgb(255 255 255 / 50%)
 
 }
 
@@ -385,100 +416,7 @@ footer {
 .footer-widget ul li a:hover {
   color: #007bff;
 }
-.py-5{
-padding-top: 1erm!important}
 
 
 /* =================================================================*/
-:root{
-  --background-dark: #2d3548;
-  --text-light: rgba(255,255,255,0.6);
-  --text-lighter: rgba(255,255,255,0.9);
-  --spacing-s: 8px;
-  --spacing-m: 16px;
-  --spacing-l: 24px;
-  --spacing-xl: 32px;
-  --spacing-xxl: 64px;
-  --width-container: 1200px;
-}
 
-
-.hero-section{
-
-  display: flex;
-  min-height: 100%;
-  justify-content: center;
-  padding: var(--spacing-xxl) var(--spacing-l);
-}
-
-.card-grid{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
-  width: 100%;
-}
-
-
-
-@media(min-width: 960px){
-  .card-grid{
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-
-
-.card:before{
-  content: '';
-
-
-}
-
-.card__background{
-  background-size: cover;
-  background-position: center;
-  border-radius: var(--spacing-l);
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform-origin: center;
-  trsnsform: scale(1) translateZ(0);
-  transition:
-    filter 200ms linear,
-    transform 200ms linear;
-}
-
-.card:hover .card__background{
-  transform: scale(1.05) translateZ(0);
-}
-
-.card-grid:hover > .card:not(:hover) .card__background{
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-}
-
-.card__content{
-  left: 0;
-  padding: var(--spacing-l);
-  position: absolute;
-  top: 0;
-}
-
-.card__category{
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: var(--spacing-s);
-  text-transform: uppercase;
-}
-
-.card__heading{
-  color: var(--text-lighter);
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-  line-height: 1.4;
-  word-spacing: 100vw;
-}
